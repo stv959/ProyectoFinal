@@ -1,0 +1,65 @@
+<web-app>
+	<servlet>
+		<servlet-name>SavePersona</servlet-name>
+		<servlet-class>pw2.Save</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SavePersona</servlet-name>
+		<url-pattern>/save</url-pattern>
+	</servlet-mapping>
+	
+   <servlet>
+      <servlet-name>ListaPersona</servlet-name>
+      <servlet-class>pw2.ListaPersona</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>ListaPersona</servlet-name>
+      <url-pattern>/listapersonas</url-pattern>
+   </servlet-mapping>
+
+
+	   <servlet>
+      <servlet-name>Mostrar</servlet-name>
+      <servlet-class>pw2.Mostrar</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>Mostrar</servlet-name>
+      <url-pattern>/mostrar</url-pattern>
+   </servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>SaveJuego</servlet-name>
+		<servlet-class>pw2.SaveJuego</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SaveJuego</servlet-name>
+		<url-pattern>/savejuego</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>ListaJuegos</servlet-name>
+		<servlet-class>pw2.ListaJuegos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListaJuegos</servlet-name>
+		<url-pattern>/listajuegos</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>Actualizar</servlet-name>
+		<servlet-class>pw2.Actualizar</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Actualizar</servlet-name>
+		<url-pattern>/actualizar</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+		<welcome-file>paginaprincipal.html</welcome-file>
+	</welcome-file-list>
+</web-app>
