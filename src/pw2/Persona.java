@@ -9,8 +9,6 @@ import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.PrimaryKey;
 //import javax.jdo.annotations.Unique;
 
-
-
 import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.datastore.KeyFactory;
 import com.google.appengine.datanucleus.annotations.Unowned;
@@ -27,12 +25,16 @@ public class Persona {
 	@Persistent
 	//@Unique
 	private String email;
-	public Persona(String name, String apellido, String email) {
+	private String tipo;
+	private boolean activo;
+
+	public Persona(String name, String apellido, String email, String tipo, boolean activo) {
 		super();
 		this.nombre = name;
 		this.apellido = apellido;
 		this.email = email;
-		
+		this.tipo=tipo;
+		this.activo=activo;
 	}	
 	public String getIdPersona() {
 		return KeyFactory.keyToString(idPersona);
@@ -44,6 +46,12 @@ public class Persona {
 	}
 	public String getNombre() {
 		return this.nombre;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	public String getTipo() {
+		return this.tipo;
 	}
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
@@ -60,7 +68,12 @@ public class Persona {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
+	public boolean getActivo() {
+		return this.activo;
+	}
+	public void setActivo(boolean activo) {
+		this.activo = activo;
+	}
 
 	
 }

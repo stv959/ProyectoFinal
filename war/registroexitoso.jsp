@@ -130,7 +130,7 @@
 <div class="container">
   <div class="row text-center">
     
-<form name="form1" action="mostrar" method="POST">
+<form name="form1" action="paginaprincipal.html" method="POST">
 
 <div class="login-form">
      <h1>Registro</h1>

@@ -1,6 +1,6 @@
 package pw2;
 
-import java.io.IOException;
+import java.io.IOException;  
 import java.util.List;
 
 import javax.jdo.PersistenceManager;
@@ -24,6 +24,7 @@ public class ListaPersona extends HttpServlet{
 		
 			try{
 				
+				@SuppressWarnings("unchecked")
 				List<Persona> personas = (List<Persona>) q.execute();
 				req.setAttribute("personas", personas);
 				RequestDispatcher rd = req.getRequestDispatcher("registroexitoso.jsp");

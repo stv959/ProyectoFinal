@@ -16,8 +16,52 @@
       <servlet-name>ListaPersona</servlet-name>
       <url-pattern>/listapersonas</url-pattern>
    </servlet-mapping>
+   
 
-
+ <servlet>
+      <servlet-name>listaadmin</servlet-name>
+      <servlet-class>pw2.listaadmin</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>listaadmin</servlet-name>
+      <url-pattern>/listaadmin</url-pattern>
+   </servlet-mapping>
+   
+ <servlet>
+      <servlet-name>editar</servlet-name>
+      <servlet-class>pw2.editar</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>editar</servlet-name>
+      <url-pattern>/editar</url-pattern>
+   </servlet-mapping>
+   
+ <servlet>
+      <servlet-name>listavendedor</servlet-name>
+      <servlet-class>pw2.listavendedor</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>listavendedor</servlet-name>
+      <url-pattern>/listavendedor</url-pattern>
+   </servlet-mapping>
+   <servlet>
+      <servlet-name>mostrar2</servlet-name>
+      <servlet-class>pw2.mostrar2</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>mostrar2</servlet-name>
+      <url-pattern>/modovendedor</url-pattern>
+   </servlet-mapping>
+   
+ <servlet>
+      <servlet-name>logout</servlet-name>
+      <servlet-class>pw2.logout</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>logout</servlet-name>
+      <url-pattern>/logout</url-pattern>
+   </servlet-mapping>
+   
 	   <servlet>
       <servlet-name>Mostrar</servlet-name>
       <servlet-class>pw2.Mostrar</servlet-class>
@@ -26,7 +70,11 @@
       <servlet-name>Mostrar</servlet-name>
       <url-pattern>/mostrar</url-pattern>
    </servlet-mapping>
+   
+   
 	
+
+
 	
 	<servlet>
 		<servlet-name>SaveJuego</servlet-name>
@@ -47,7 +95,14 @@
 		<servlet-name>ListaJuegos</servlet-name>
 		<url-pattern>/listajuegos</url-pattern>
 	</servlet-mapping>
-	
+	<servlet>
+		<servlet-name>GmailPw2</servlet-name>
+		<servlet-class>pw2.GmailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GmailPw2</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
 	
 	<servlet>
 		<servlet-name>Actualizar</servlet-name>

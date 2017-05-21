@@ -38,7 +38,7 @@
             <li class="divider"></li>
             <li><a href="quienessomos.html">¿Quienes Somos?</a> </li>
             <li class="divider"></li>
-            <li><a href="registrarse.html">Registrarse</a> </li>
+            <li><a href="login">login admin</a> </li>
           </ul>
         </li>
       </ul>
@@ -140,16 +140,25 @@
       <div class="form-group log-status">
        <input type="text" class="form-control" placeholder="correo" name="email" required>     
      </div>
-     <label for="password">Password</label>
+ 
+     <label for="nombre">Servicio</label>
      <div class="form-group log-status">
-       <input type="password" class="form-control" placeholder="password" name="password" required maxlength="8">       
+        <select class="form-control"  name="tipo">
+       <option value="empleado" >empleado</option>
+       <option value="cliente">cliente</option>
+       </select>      
      </div>
-
-      <label for="password2">Reingrese el Password</label>
-     <div class="form-group log-status">
-       <input type="password" class="form-control" placeholder="Vuelva a escribirla"name="password2" required maxlength="8">        
-     </div>      
-     <input type="submit" value="Registrarse" class="log">
+       <div >
+       <label for="nombre">Activo</label>
+      <SELECT class="form-control" name="activo" >
+              	<option value="true">si</option>
+              	<option value="false">no</option>
+              </SELECT>     
+     </div>
+     <input type="submit" value="Registrarse" >
+     <input type="button" value="iniciar" onclick="location.href='login'"/>
+     
+     
 </div>
 </form>
   </div>

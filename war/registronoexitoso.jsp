@@ -42,7 +42,7 @@ String nombrederegistro = request.getParameter("nombre");
             <li><a href="#"></a> </li>
             <li><a href="paginaprincipal.html">Principal</a> </li>
             <li class="divider"></li>
-            <li><a href="quienessomos.html">Â¿Quienes Somos?</a> </li>
+            <li><a href="quienessomos.html">¿Quienes Somos?</a> </li>
             <li class="divider"></li>
             <li><a href="registrarse.html">Registrarse</a> </li>
           </ul>
@@ -143,7 +143,7 @@ String nombrederegistro = request.getParameter("nombre");
      <br>
      
      
-     <h3>Lo sentimos, su contraseÃ±a no cumple con la condicion de ser mayor a 8 caracteres</h3>
+     <h3>Lo sentimos, su contraseñaa no cumple con la condicion de ser mayor a 8 caracteres</h3>
      
      <input type="submit" value="Aceptar" class="log">
 </div>

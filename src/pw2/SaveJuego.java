@@ -29,7 +29,7 @@ public class SaveJuego extends HttpServlet {
 			}catch(Exception e){
 				System.out.println(e);
 				resp.getWriter().println("Ocurrió un error, vuelva a intentarlo.");
-				resp.sendRedirect("paginaprincipal.html");			
+				resp.sendRedirect("#");			
 			}
 		}catch(Exception e){
 			System.out.println(e);

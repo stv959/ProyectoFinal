@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @SuppressWarnings("serial")
-public class Mostrar extends HttpServlet{
+public class mostrar2 extends HttpServlet{
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
@@ -29,7 +29,7 @@ public class Mostrar extends HttpServlet{
 				
 				List<Persona> personas = (List<Persona>) q.execute();
 				req.setAttribute("personas", personas);
-				RequestDispatcher rd = req.getRequestDispatcher("listapersonas.jsp");
+				RequestDispatcher rd = req.getRequestDispatcher("listavendedor.jsp");
 				rd.forward(req, resp);
 			}catch(Exception e){
 				System.out.println(e);

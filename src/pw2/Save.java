@@ -1,6 +1,7 @@
 package pw2;
-import java.io.IOException; 
+import java.io.IOException;  
 import javax.jdo.PersistenceManager;
+
 import javax.servlet.http.*;
 import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.datastore.KeyFactory;
@@ -13,11 +14,14 @@ public class Save extends HttpServlet {
 		
 		String nombre = req.getParameter("nombre");
 		String apellido = req.getParameter("apellido");
-		String email = req.getParameter("email");						 
+		String email = req.getParameter("email");		
+		String tipo = req.getParameter("tipo");	
+		boolean activo=Boolean.parseBoolean(req.getParameter("activo"));
 		final PersistenceManager pm = PMF.get().getPersistenceManager();			
 		try{
 			Key key;
-			Persona p = new Persona(nombre, apellido, email);			
+			Persona p = new Persona(nombre, apellido, email,tipo,activo);
+			
 			try{
 				pm.makePersistent(p);
 				resp.getWriter().println("Persona grabada correctamente.");

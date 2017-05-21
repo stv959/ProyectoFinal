@@ -12,24 +12,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-
 @SuppressWarnings("serial")
-public class Mostrar extends HttpServlet{
+public class listaadmin extends HttpServlet{
 	@Override
-	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		//resp.setContentType("text/plain");
 		
 		final PersistenceManager pm = PMF.get().getPersistenceManager();
 		final Query q = pm.newQuery(Persona.class);
 		
-
-		
 			try{
 				
 				List<Persona> personas = (List<Persona>) q.execute();
 				req.setAttribute("personas", personas);
-				RequestDispatcher rd = req.getRequestDispatcher("listapersonas.jsp");
+				RequestDispatcher rd = req.getRequestDispatcher("lista.jsp");
 				rd.forward(req, resp);
 			}catch(Exception e){
 				System.out.println(e);
@@ -39,5 +36,4 @@ public class Mostrar extends HttpServlet{
 			}
 		}			
 	}
-
 

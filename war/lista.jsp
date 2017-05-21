@@ -8,20 +8,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CLickComputer</title>
-<style>
-  .transpa  {
-    background-color: transparent;
-    
-    border: 0px solid #000000;
-}
+<title>BlackMarket</title>
 
-
-</style>
 <!-- Bootstrap -->
-<link rel="stylesheet" href="css/basedatos.css">
 <link rel="stylesheet" href="css/principal.css">
 <link rel="stylesheet" href="css/secundaria.css">
+<link rel="stylesheet" href="css/registrarse.css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -37,7 +29,7 @@
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      <a class="navbar-brand" href="#">CLickComputer</a> </div>
+      <a class="navbar-brand" href="#">BlackMarket</a> </div>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
@@ -51,7 +43,7 @@
             <li class="divider"></li>
             <li><a href="quienessomos.html">¿Quienes Somos?</a> </li>
             <li class="divider"></li>
-            <li><a href="#">Lista</a> </li>
+            <li><a href="#">lista</a> </li>
           </ul>
         </li>
       </ul>
@@ -104,7 +96,7 @@
   <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
       <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-2"><a href="inicioadmin.jsp"><img class="img-circle" alt="Free Shipping" src="img/home.jpg"></a></div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-2"><a href="paginaprincipal.html"><img class="img-circle" alt="Free Shipping" src="img/home.jpg"></a></div>
         <div class="col-lg-6 col-md-9 col-xs-9 col-sm-7">
           <h4><center>Inicio</center></h4>
         </div>
@@ -120,15 +112,16 @@
     </div>
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
      <div class="row">
-        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-2"><img class="img-circle" alt="Free Shipping" src="img/logueado.jpg"></div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-2"><img class="img-circle" alt="Free Shipping" src="img/registrarse.jpg"></div>
         <div class="col-lg-6 col-md-9 col-xs-9 col-sm-7">
-          <h4><center>ADMIN</center></h4>
+          <h4><center>lista</center></h4>
         </div>      
       </div> 
     </div>
     
     
   </div>
+   
   
 </div>
 
@@ -137,46 +130,19 @@
 <div class="container">
   <div class="row text-center">
     
-   
+<form name="form1" action="mostrar" method="POST">
+
+<div class="login-form">
+     <h1>Ingresando</h1>
+     <br>
+     
+     
+     <h3>esta entrando a ver usuarios de la pagina en modo administrador</h3>
     
-    <%
-List<Persona> personas = (List<Persona>)request.getAttribute("personas");
-%>
-
-<div class="Table">
-	<div class="Title"><p>Se encuentran <%= personas.size()%> personas registradas </p></div>
-	<center><div class="row">
-	
-		<div class="Cell"><p>Nombres</p></div>
-		<div class="Cell"><p>Apellidos</p></div>
-		<div class="Cell"><p>Correo electrónico</p></div>
-		<div class="Cell"><p>Tipo de cuenta</p></div>
-		<div class="Cell"><p>Activo</p></div>
-		<div class="Cell"><p>cambiar por</p></div>
-		
-	</div></center>
-
-<% for( Persona p : personas ) { %>		<form action="editar" method="post">
-
-	<div class="Row">		
-		<div class="Cell"><p><input class="transpa" type="text" name="nombre" readonly value="<%= p.getNombre() %>" size="12"></p></div>
-		<div class="Cell"><p><input class="transpa" type="text" name="apellido" readonly value="<%= p.getApellido() %>" size="12"></p></div>
-		<div class="Cell"><p><input class="transpa" type="text" name="email" readonly value="<%= p.getEmail() %>" size="20"></p></div>
-		<div class="Cell"><p><input class="transpa" type="text" name="tipo" readonly value="<%= p.getTipo() %>" size="12"></p></div>
-		<div class="Cell"><p><%= p.getActivo() %></p></div>
-		<div class="Cell"><p><input class="transpa" type="text" name="activo" readonly value="<%=!p.getActivo() %>" size="1">
-		<input type="submit" value="si"></p></div>
-		
-		</div>
-	
-	</form>
-<% } %>
-
-
+     <br>
+     <input type="submit" value="Aceptar" class="log">
 </div>
-
-
-
+</form>
   </div>
   <div class="row text-center hidden-xs">
   </div>
@@ -185,7 +151,7 @@ List<Persona> personas = (List<Persona>)request.getAttribute("personas");
     
   </nav>
 </div>
-<h2 class="text-center">varios</h2>
+<h2 class="text-center">vari</h2>
 <hr>
 <div class="container">
   <div class="row">
@@ -195,13 +161,13 @@ List<Persona> personas = (List<Persona>)request.getAttribute("personas");
           <div class="media-left"> <a href="#"> <img src="img/o1.jpg" alt="placeholder image" width="140" height="110" class="media-object"> </a> </div>
           <div class="media-body">
             <h4 class="media-heading">Rocket League®</h4>
-          </div>
+           Soccer meets driving once again in the long-awaited, physics-based multiplayer-focused sequel to Supersonic Acrobatic Rocket-Powered Battle-Cars!  </div>
         </div>
         <div class="media">
           <div class="media-left"> <a href="#"> <img src="img/o2.jpg" alt="placeholder image" width="140" height="110" class="media-object"> </a> </div>
           <div class="media-body">
             <h4 class="media-heading">Sleeping Dogs: Definitive Edition</h4>
-           </div>
+             </div>
         </div>
        
       </div>
@@ -213,16 +179,15 @@ List<Persona> personas = (List<Persona>)request.getAttribute("personas");
           <div class="media-left"> <a href="#"> <img src="img/o3.jpg" alt="placeholder image" width="140" height="110" class="media-object"></a></div>
           <div class="media-body">
             <h4 class="media-heading">STAR WARS™ Empire at War - Gold Pack</h4>
-          </div>
+           </div>
         </div>         
         </div>
  <div class="media">
           <div class="media-left"> <a href="#"> <img src="img/o4.jpg" alt="placeholder image" width="140" height="110" class="media-object"></a></div>
           <div class="media-body">
             <h4 class="media-heading">Sid Meier’s Civilization® VI</h4>
-           </div>
+            </div>
         </div>
-        
       </div>
     </div>
     <hr class="hidden-lg">
@@ -234,12 +199,13 @@ List<Persona> personas = (List<Persona>)request.getAttribute("personas");
       </div>
     </div>
   </div>
+<hr>
   <div class="container well">
     <div class="row">
     
      
       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-7">
-      <h4>TambiÃ©n nos encuentran en: </h4>
+      <h4>Tambien nos encuentran en: </h4>
       <br>
        <h5> &nbsp &nbsp &nbsp   Facebook   &nbsp &nbsp  &nbsp &nbsp  &nbsp Twitter &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp   Gmail</h5>
          <nav class="finalredes">
@@ -263,21 +229,15 @@ List<Persona> personas = (List<Persona>)request.getAttribute("personas");
 
     </nav>
 <div class="row">
-  
-  
-  
-  
-  
-  
-  
-  
+ 
   
 </div>
         
       </div>
-   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5"> 
+      
+     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5"> 
         <address>
-        <strong>CLickComputer</strong><br>
+        <strong>BlackMarket</strong><br>
         Arequipa, Perú<br>
         ------------------------------------<br>
         <abbr title="Phone">Desarrolladores: Córdova Puma Steven 
@@ -286,7 +246,7 @@ List<Persona> personas = (List<Persona>)request.getAttribute("personas");
       </address>
         <address>
         <strong>Contáctenos</strong><br>
-        <a href="mailto:#">click.computer2@hotmail.com</a><br>
+        <a href="mailto:#">BlackMrket@gmail.com</a><br>
                 </address>
       </div>
     </div>
@@ -296,7 +256,7 @@ List<Persona> personas = (List<Persona>)request.getAttribute("personas");
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <p>Copyright Â© CLickComputer. All rights reserved.</p>
+        <p>Copyright Â© BlackMarket. All rights reserved.</p>
       </div>
     </div>
   </div>
