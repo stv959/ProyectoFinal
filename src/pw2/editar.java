@@ -43,7 +43,7 @@ public class editar extends HttpServlet {
 			}catch(Exception e){
 				System.out.println(e);
 				resp.getWriter().println("Ocurrio un error, vuelva a intentarlo.");
-				resp.sendRedirect("/personas");
+				resp.sendRedirect("../");
 			}
 		}catch(Exception e){
 			System.out.println(e);

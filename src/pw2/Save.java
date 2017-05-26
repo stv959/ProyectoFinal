@@ -29,7 +29,7 @@ public class Save extends HttpServlet {
 			}catch(Exception e){
 				System.out.println(e);
 				resp.getWriter().println("Ocurrio un error, vuelva a intentarlo.");
-				resp.sendRedirect("/personas");
+				resp.sendRedirect("/paginaprincipal.html");
 			}
 		}catch(Exception e){
 			System.out.println(e);
