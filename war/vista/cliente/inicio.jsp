@@ -38,7 +38,7 @@
             <li><a href="#">¿Quienes Somos?</a> </li>
             <li class="divider"></li>
           
-            <li><a href="logout">cerrar</a> </li>
+            <li><a href="../../logout">cerrar</a> </li>
           </ul>
         </li>
       </ul>
@@ -128,7 +128,7 @@
         <div class="caption">
           <h3>DELL</h3>
           <p> </p>
-          <p><a href="#" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> DELL</a> </p>
+          <p><a href="../../listapc2.html" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> DELL</a> </p>
         </div>
       </div>
     </div>
