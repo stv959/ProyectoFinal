@@ -28,14 +28,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="paginaprincipal.html">Inicio <span class="sr-only">(current)</span></a> </li>
+        <li class="active"><a href="inicio.jsp">Inicio <span class="sr-only">(current)</span></a> </li>
      
         <li class="dropdown"> <a href="paginaprincipal.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#"></a> </li>
             <li><a href="inicio.jsp">Principal</a> </li>
             <li class="divider"></li>
-            <li><a href="quienessomos.html">¿Quienes Somos?</a> </li>
+            <li><a href="#">¿Quienes Somos?</a> </li>
             <li class="divider"></li>
           
             <li><a href="logout">cerrar</a> </li>
@@ -119,7 +119,7 @@
         <div class="caption">
           <h3>Toshiba</h3>
           <p></p>
-          <p><a href="listpc.html" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> toshiba</a></p>
+          <p><a href="../../listpc.html" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> toshiba</a></p>
         </div>
       </div>
     </div>
