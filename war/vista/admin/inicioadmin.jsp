@@ -190,7 +190,7 @@
   </nav>
 </div>
 <hr>
-<h2 class="text-center">Campo vacio</h2>
+<h2 class="text-center">OFERTA</h2>
 <hr>
 <div class="container">
   <div class="row">
@@ -199,13 +199,13 @@
         <div class="media">
           <div class="media-left"> <a href="#"> <img src="img/o1.jpg" alt="placeholder image" width="140" height="110" class="media-object"> </a> </div>
           <div class="media-body">
-            <h4 class="media-heading">Rocket League®</h4>
+            <h4 class="media-heading">OFERTA</h4>
           </div>
         </div>
         <div class="media">
           <div class="media-left"> <a href="#"> <img src="img/o2.jpg" alt="placeholder image" width="140" height="110" class="media-object"> </a> </div>
           <div class="media-body">
-            <h4 class="media-heading">Sleeping Dogs: Definitive Edition</h4>
+            <h4 class="media-heading">OFERTA</h4>
              </div>
         </div>
        
@@ -217,14 +217,14 @@
         <div class="media">
           <div class="media-left"> <a href="#"> <img src="img/o3.jpg" alt="placeholder image" width="140" height="110" class="media-object"></a></div>
           <div class="media-body">
-            <h4 class="media-heading">STAR WARS™ Empire at War - Gold Pack</h4>
+            <h4 class="media-heading">OFERTA</h4>
           </div>
         </div>         
         </div>
  <div class="media">
           <div class="media-left"> <a href="#"> <img src="img/o4.jpg" alt="placeholder image" width="140" height="110" class="media-object"></a></div>
           <div class="media-body">
-            <h4 class="media-heading">Sid Meier’s Civilization® VI</h4>
+            <h4 class="media-heading">OFERTA</h4>
             </div>
         </div>
       </div>
