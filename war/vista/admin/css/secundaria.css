@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+span[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+ 
+
+.sociales{ text-decoration: none;
+	float:left;
+ }
+
+.listasocial {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.redes { *zoom: 1; }
+.redes:before, .redes:after {
+  content: "";
+    display: table;
+}
+.redes:after { clear: both; }
+
+
+/* ---------- NAVIGATION ---------- */
+
+.finalredes {
+    margin: 50px auto;
+    width: 60px;
+}
+
+.finalredes ul {
+    background: #505664;
+    border-radius: 5px;
+    display: inline-table;
+    position: left;
+}
+
+.finalredes li {
+    float:left;
+}
+
+.finalredes a {
+    
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    width: 60px;
+	
+}
+
+.finalredes a:hover{
+    color: #fff;
+}
+
+.finalredes ul li ul {
+	margin-top: 20px;
+	padding: 5px 0;
+	position: absolute;
+	left: 66px;
+	top: 90px;
+	width: 211px;
+	height: 64px;
+}
+
+
+.finalredes ul li ul li {
+    float: left;
+}
+
+.finalredes ul li ul li a {
+    color: #fff;
+}
+
+.finalredes ul li ul li a:hover {
+    background-image:url("../img/fondodivision.jpg");
+}

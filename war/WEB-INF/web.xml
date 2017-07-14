@@ -8,7 +8,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	
 	<servlet>
 		<servlet-name>SavePersona</servlet-name>
-		<servlet-class>pw2.Save</servlet-class>
+		<servlet-class>controlador.Save</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>SavePersona</servlet-name>
@@ -17,7 +17,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	
    <servlet>
       <servlet-name>ListaPersona</servlet-name>
-      <servlet-class>pw2.ListaPersona</servlet-class>
+      <servlet-class>controlador.ListaPersona</servlet-class>
    </servlet>
    <servlet-mapping>
       <servlet-name>ListaPersona</servlet-name>
@@ -27,7 +27,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 
  <servlet>
       <servlet-name>listaadmin</servlet-name>
-      <servlet-class>pw2.listaadmin</servlet-class>
+      <servlet-class>controlador.listaadmin</servlet-class>
    </servlet>
    <servlet-mapping>
       <servlet-name>listaadmin</servlet-name>
@@ -36,7 +36,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
    
  <servlet>
       <servlet-name>editar</servlet-name>
-      <servlet-class>pw2.editar</servlet-class>
+      <servlet-class>controlador.editar</servlet-class>
    </servlet>
    <servlet-mapping>
       <servlet-name>editar</servlet-name>
@@ -45,7 +45,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
    
  <servlet>
       <servlet-name>listavendedor</servlet-name>
-      <servlet-class>pw2.listavendedor</servlet-class>
+      <servlet-class>controlador.listavendedor</servlet-class>
    </servlet>
    <servlet-mapping>
       <servlet-name>listavendedor</servlet-name>
@@ -53,7 +53,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
    </servlet-mapping>
    <servlet>
       <servlet-name>mostrar2</servlet-name>
-      <servlet-class>pw2.mostrar2</servlet-class>
+      <servlet-class>controlador.mostrar2</servlet-class>
    </servlet>
    <servlet-mapping>
       <servlet-name>mostrar2</servlet-name>
@@ -62,7 +62,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
    
     <servlet>
       <servlet-name>entrar</servlet-name>
-      <servlet-class>pw2.entrar</servlet-class>
+      <servlet-class>controlador.entrar</servlet-class>
    </servlet>
    <servlet-mapping>
       <servlet-name>entrar</servlet-name>
@@ -70,7 +70,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
    </servlet-mapping>
     <servlet>
       <servlet-name>pasar</servlet-name>
-      <servlet-class>pw2.pasar</servlet-class>
+      <servlet-class>controlador.pasar</servlet-class>
    </servlet>
    <servlet-mapping>
       <servlet-name>pasar</servlet-name>
@@ -79,7 +79,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
    
  <servlet>
       <servlet-name>logout</servlet-name>
-      <servlet-class>pw2.logout</servlet-class>
+      <servlet-class>controlador.logout</servlet-class>
    </servlet>
    <servlet-mapping>
       <servlet-name>logout</servlet-name>
@@ -88,7 +88,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
    
 	   <servlet>
       <servlet-name>Mostrar</servlet-name>
-      <servlet-class>pw2.Mostrar</servlet-class>
+      <servlet-class>controlador.Mostrar</servlet-class>
    </servlet>
    <servlet-mapping>
       <servlet-name>Mostrar</servlet-name>
@@ -102,7 +102,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	
 	<servlet>
 		<servlet-name>SaveJuego</servlet-name>
-		<servlet-class>pw2.SaveJuego</servlet-class>
+		<servlet-class>controlador.SaveJuego</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>SaveJuego</servlet-name>
@@ -113,7 +113,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	
 	<servlet>
 		<servlet-name>ListaJuegos</servlet-name>
-		<servlet-class>pw2.ListaJuegos</servlet-class>
+		<servlet-class>controlador.ListaJuegos</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>ListaJuegos</servlet-name>
@@ -121,7 +121,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	</servlet-mapping>
 	<servlet>
 		<servlet-name>GmailPw2</servlet-name>
-		<servlet-class>pw2.GmailServlet</servlet-class>
+		<servlet-class>controlador.GmailServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>GmailPw2</servlet-name>
@@ -130,15 +130,22 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 	
 	<servlet>
 		<servlet-name>Actualizar</servlet-name>
-		<servlet-class>pw2.Actualizar</servlet-class>
+		<servlet-class>controlador.Actualizar</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Actualizar</servlet-name>
 		<url-pattern>/actualizar</url-pattern>
 	</servlet-mapping>
-	
+	<servlet>
+		<servlet-name>redirec</servlet-name>
+		<servlet-class>controlador.redirec</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>redirec</servlet-name>
+		<url-pattern>/redirec</url-pattern>
+	</servlet-mapping>
 	
 	<welcome-file-list>
-		<welcome-file>paginaprincipal.html</welcome-file>
+		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 </web-app>

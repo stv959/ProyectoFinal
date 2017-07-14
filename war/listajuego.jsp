@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="pw2.*"%>
+<%@ page import="modelo.*"%>
 <%@ page import="java.util.List"%>
 
 <!DOCTYPE html>
@@ -138,11 +138,11 @@ List<juegos> game= (List<juegos>)request.getAttribute("juego");
     <thead>
     	<tr>
         	
-            <th scope="col">Outlast 2</th>
-            <th scope="col">Warhammer</th>
-            <th scope="col">Epic Battle</th>
-            <th scope="col">Sniper </th>
-            <th scope="col">PREY</th>
+            <th scope="col">Toshiba</th>
+            <th scope="col">Toshiba</th>
+            <th scope="col">Toshiba</th>
+            <th scope="col">Toshiba </th>
+            <th scope="col">Toshiba</th>
         </tr>
     </thead>
         <tfoot>
@@ -173,52 +173,8 @@ List<juegos> game= (List<juegos>)request.getAttribute("juego");
     
   </nav>
 </div>
-<hr>
-<h2 class="text-center">campo</h2>
-<hr>
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 col-lg-5">
-      <div class="media-object-default">
-        <div class="media">
-          <div class="media-left"> <a href="#"> <img src="img/.jpg" alt="placeholder image" width="140" height="110" class="media-object"> </a> </div>
-          <div class="media-body">
-            <h4 class="media-heading">vario</h4>
-           </div>
-        </div>
-        <div class="media">
-          <div class="media-left"> <a href="#"> <img src="img/.jpg" alt="placeholder image" width="140" height="110" class="media-object"> </a> </div>
-          <div class="media-body">
-            <h4 class="media-heading">va</h4>
-            </div>
-        </div>
-       
-      </div>
-    </div>
-    <hr class="hidden-md hidden-lg">
-    <div class="col-md-6 col-lg-5 col-lg-offset-2">
-      <div class="media-object-default">
-        <div class="media">
-          <div class="media-left"> <a href="#"> <img src="img/.jpg" alt="placeholder image" width="140" height="110" class="media-object"></a></div>
-          <div class="media-body">
-            <h4 class="media-heading">va</h4>
-          </div>
-        </div>         
-        </div>
- <div class="media">
-          <div class="media-left"> <a href="#"> <img src="img/.jpg" alt="placeholder image" width="140" height="110" class="media-object"></a></div>
-          <div class="media-body">
-            <h4 class="media-heading">va</h4>
-            </div>
-      </div>
-    </div>
-    </div>
-    <hr class="hidden-lg">
-    <div class="col-lg-4 col-md-12 hidden-md">
-      <div class="media-object-default">
-  </div>
-    </div>
-  </div>
+
+
 <hr>
   <div class="container well">
     <div class="row">
